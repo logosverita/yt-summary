@@ -8,7 +8,7 @@ A Claude Code skill that fetches YouTube transcripts, generates bullet-point sum
 
 - Fetches video metadata (title, channel, duration, chapters, heatmap) via `yt-dlp`
 - Pulls Japanese or English subtitles (with HTTP 429 retry handling)
-- Extracts up to 10 highlight frames from the 720p stream via `ffmpeg` and embeds them as base64
+- Extracts highlight frames (heatmap / chapters / keyphrases) from the 720p stream via `ffmpeg` and embeds them as base64 — no upper limit, so long videos may yield dozens of frames
 - Lets Claude write a sectioned Japanese summary
 - Emits both `<video-id>.md` and `<video-id>.html` (theme toggle, responsive, CSS variables)
 
