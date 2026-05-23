@@ -1,0 +1,13 @@
+# Output produced by the skill at runtime
+output/
+examples/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Temporary files
+*.tmp
+*.bak
